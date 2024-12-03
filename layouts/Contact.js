@@ -17,7 +17,42 @@ const Contact = ({ data }) => {
         <div className="container">
           {markdownify(title, "h1", "text-center font-normal")}
           <div className="section row pb-0">
-            <div className="col-12 md:col-6 lg:col-7">
+            <div className="col-12 md:col-6 lg:col-5 flex flex-col gap-8">
+              <div>
+                <h4>Heade Office</h4>
+                <p>
+                  Pakuwon Tower 26th floor Unit J, Casablanca Raya Street No.
+                  88, South Jakarta, Indonesia <br />
+                  +62 21 566 3704
+                </p>
+              </div>
+
+              <div>
+                <h4>Development Center</h4>
+                <p>
+                  Komplek Aldiron Hero Block C No. 9-10, Daan Mogot Street Kav.
+                  119, West Jakarta, Indonesia <br />
+                  info@indocyber.co.id
+                </p>
+              </div>
+
+              <div>
+                <h4>Representative Office</h4>
+                <p>
+                  Gedung Sampoerna Strategic Square South Tower Lt. 30 Jl.
+                  Jenderal Sudirman No.45-46, RT.3/RW.4, Karet Semanggi,
+                  Kecamatan Setiabudi, Kota Jakarta Selatan, DKI Jakarta
+                </p>
+              </div>
+            </div>
+            <div className="col-12 md:col-6 lg:col-7 flex flex-col gap-4">
+              <div>
+                <h4>What can we do for you?</h4>
+                <p>
+                  Please feel free to tell your problem, we will contact you
+                  immediately
+                </p>
+              </div>
               <form
                 className="contact-form"
                 method="POST"
@@ -61,7 +96,7 @@ const Contact = ({ data }) => {
                 <div className="mb-3">
                   <textarea
                     className="form-textarea w-full rounded-md"
-                    rows="7"
+                    rows="4"
                     placeholder="Your message"
                   />
                 </div>
@@ -69,17 +104,6 @@ const Contact = ({ data }) => {
                   Send Now
                 </button>
               </form>
-            </div>
-            <div className="content col-12 md:col-6 lg:col-5">
-              {markdownify(info.title, "h4")}
-              {markdownify(info.description, "p", "mt-4")}
-              <ul className="contact-list mt-5">
-                {info.contacts.map((contact, index) => (
-                  <li key={index}>
-                    {markdownify(contact, "strong", "text-dark")}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>

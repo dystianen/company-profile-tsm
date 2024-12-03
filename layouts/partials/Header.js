@@ -24,8 +24,9 @@ const Header = () => {
     <header className="header">
       <nav className="navbar container">
         {/* logo */}
-        <div className="order-0">
+        <div className="order-0 flex items-center">
           <Logo src={logo} />
+          <h5>TSM</h5>
         </div>
 
         {/* navbar toggler */}
@@ -96,8 +97,28 @@ const Header = () => {
                 )}
               </React.Fragment>
             ))}
+
+            {enable && (
+              <li className="md:hidden">
+                <Link
+                  className="btn btn-primary z-0 py-[14px]"
+                  href={link}
+                  rel=""
+                >
+                  {label}
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
+
+        {enable && (
+          <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:order-2 md:ml-0 md:flex">
+            <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="">
+              {label}
+            </Link>
+          </div>
+        )}
       </nav>
     </header>
   );

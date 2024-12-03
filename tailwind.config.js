@@ -1,4 +1,5 @@
 const theme = require("./config/theme.json");
+const flowbite = require("flowbite-react/tailwind");
 
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
 let font_scale = Number(theme.fonts.font_size.scale);
@@ -28,6 +29,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./layouts/**/*.{js,ts,jsx,tsx}",
     "./content/**/*.{md,mdx}",
+    flowbite.content(),
   ],
   theme: {
     screens: {
@@ -68,12 +70,17 @@ module.exports = {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
       },
+      backgroundImage: {
+        profesional: "url('/images/bg_profesional.jpg')",
+        "pattern-1": "url('/images/bg_hero_clip.svg')",
+      },
     },
   },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({ generateContainer: false }),
+    flowbite.plugin(),
   ],
   // important: true,
 };
