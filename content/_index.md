@@ -13,7 +13,7 @@ about:
   description: "An integrated information & technology system provider, dedicated to delivering highly effective solutions in the field of Information Systems."
   vision: "Reputable Nation-wide Integrated, Diversified IT and Digital Transformation Solution."
   mission: "We provide a cutting-edge IT and Digital Transformation solution for spesialized industries and consistently add values to retain loyalty to our stakeholders."
-  image: "/images/banner.svg"
+  image: "/images/logo_tsm.png"
 
 # feature
 feature:
