@@ -1,10 +1,10 @@
 import config from "@config/config.json";
 import theme from "@config/theme.json";
-import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import Providers from "@layouts/partials/Providers";
 import "../styles/style.scss";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata = {
   title: "BigSpring Light Nextjs",
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body suppressHydrationWarning={true}>
-        <TwSizeIndicator />
+        <NextTopLoader color={theme.colors.default.theme_color.primary} />
         <Header />
         <Providers>{children}</Providers>
         <Footer />

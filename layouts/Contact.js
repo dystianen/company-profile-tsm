@@ -1,5 +1,4 @@
 "use client";
-
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
@@ -13,13 +12,13 @@ const Contact = ({ data }) => {
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ""}
     >
-      <section className="section">
+      <section className="pt-20 pb-32">
         <div className="container">
           {markdownify(title, "h1", "text-center font-normal")}
           <div className="section row pb-0">
             <div className="col-12 md:col-6 lg:col-5 flex flex-col gap-8">
               <div>
-                <h4>Heade Office</h4>
+                <h4>Head Office</h4>
                 <p>
                   Pakuwon Tower 26th floor Unit J, Casablanca Raya Street No.
                   88, South Jakarta, Indonesia <br />
@@ -31,8 +30,7 @@ const Contact = ({ data }) => {
                 <h4>Development Center</h4>
                 <p>
                   Komplek Aldiron Hero Block C No. 9-10, Daan Mogot Street Kav.
-                  119, West Jakarta, Indonesia <br />
-                  info@indocyber.co.id
+                  119, West Jakarta, Indonesia
                 </p>
               </div>
 

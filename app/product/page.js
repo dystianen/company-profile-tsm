@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useRef } from "react";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const experience = [
   {
@@ -107,7 +107,7 @@ const Product = () => {
   return (
     <>
       <section>
-        <div className="bg-profesional h-[92vh] bg-cover relative">
+        <div className="bg-profesional h-[94dvh] bg-cover relative">
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -158,7 +158,7 @@ const Product = () => {
       <section
         ref={knowledgeRef}
         id="knowledge"
-        className="section bg-theme-light bg-pattern-1 bg-cover"
+        className="section bg-theme-light bg-pattern-1 bg-cover min-h-screen flex items-center"
       >
         <div className="container">
           <div className="flex flex-col gap-4">
@@ -198,7 +198,7 @@ const Product = () => {
                   viewport={{
                     once: true,
                   }}
-                  class="max-w-sm p-4 bg-white/80 border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 text-center flex flex-col items-center"
+                  class="max-w-sm p-4 bg-white/80 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 text-center flex flex-col items-center"
                 >
                   <Image
                     src={item.icon}
@@ -245,7 +245,7 @@ const Product = () => {
                   </div>
                   <p>{item.desc}</p>
                 </div>
-                <div class="w-full lg:w-1/2 p-6 bg-white border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 ">
+                <div class="w-full lg:w-1/2 p-6 bg-white  rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 ">
                   <div className="flex flex-col gap-2">
                     {item.fundamental && (
                       <div className="flex flex-col">
