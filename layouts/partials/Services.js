@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 
 const Services = ({ services }) => {
-  return services.map((service, index) => {
+  return services?.map((service, index) => {
     const isOdd = index % 2 > 0;
     return (
       <section
