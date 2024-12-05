@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "Bigspring Light Nextjs",
+    "title": "Tekno Selaras Makmur",
     "base_url": "/",
     "favicon": "/images/logo_tsm.png",
     "logo": "/images/logo_tsm.png",
     "logo_width": "60",
     "logo_height": "50",
-    "logo_text": "Bigspring Light"
+    "logo_text": "Tekno Selaras Makmur"
   },
 
   "settings": {
@@ -25,7 +25,7 @@
     "contact_form_action": "",
     "tag_manager_id": "",
     "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    "copyright": "&copy; 2024, PT. Selaras Tekno Makmur"
   },
 
   "metadata": {
