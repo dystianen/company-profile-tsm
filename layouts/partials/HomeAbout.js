@@ -11,22 +11,20 @@ const HomeAbout = ({ about }) => {
         {/* <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3"> */}
         <div className="mt-8 grid gap-x-8 gap-y-6">
           <div className="text-center">
-            <p className="text-lg">{markdownify(about.description)}</p>
+            <p>{markdownify(about.description)}</p>
           </div>
-          <div className="about flex items-center">
-            <div className="w-[30%] justify-items-end">
+          <div className="about flex flex-col items-center md:flex-row">
+            <div className="md:w-[30%] md:justify-items-end w-full justify-items-center">
               <Image src={about.image} width={300} height={300} />
             </div>
-            <div className="w-[70%]">
-              <div className="vision">
-                {/* <h2 className="text-xl leading-8 bg-primary text-white p-2 pr-4 inline-block border-l-8 border-grey">Our Vision</h2> */}
-                <h2 className="text-xl leading-8 pr-6 py-2 inline-block border-b-4 border-primary">Our Vision</h2>
-                <p className="text-lg mt-2">{markdownify(about.vision)}</p>
+            <div className="md:w-[70%] w-full">
+              <div className="vision md:text-left text-center">
+                <h2 className="text-xl leading-8 pr-6 inline-block border-b-4 border-primary">Our Vision</h2>
+                <p className="mt-2">{markdownify(about.vision)}</p>
               </div>
-              <div className="mission mt-6">
-                {/* <h2 className="text-xl leading-8 bg-primary text-white p-2 pr-4 inline-block border-r-8 border-grey">Our Mission</h2> */}
-                <h2 className="text-xl leading-8 pl-6 py-2 inline-block border-b-4 border-primary">Our Mission</h2>
-                <p className="text-lg mt-2">{markdownify(about.mission)}</p>
+              <div className="mission mt-4 md:text-left text-center">
+                <h2 className="text-xl leading-8 pr-6 inline-block border-b-4 border-primary">Our Mission</h2>
+                <p className="mt-2">{markdownify(about.mission)}</p>
               </div>
             </div>
           </div>
