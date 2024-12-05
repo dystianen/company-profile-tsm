@@ -198,7 +198,7 @@ const Product = () => {
                   viewport={{
                     once: true,
                   }}
-                  class="max-w-sm p-4 bg-white/80 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 text-center flex flex-col items-center"
+                  className="max-w-sm p-4 bg-white/80 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 text-center flex flex-col items-center"
                 >
                   <Image
                     src={item.icon}
@@ -206,10 +206,10 @@ const Product = () => {
                     height={60}
                     alt={item.title}
                   />
-                  <h5 class="text-h5 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-4">
+                  <h5 className="text-h5 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-4">
                     {item.title}
                   </h5>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     {item.desc}
                   </p>
                 </motion.div>
@@ -245,7 +245,7 @@ const Product = () => {
                   </div>
                   <p>{item.desc}</p>
                 </div>
-                <div class="w-full lg:w-1/2 p-6 bg-white  rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 ">
+                <div className="w-full lg:w-1/2 p-6 bg-white  rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 ">
                   <div className="flex flex-col gap-2">
                     {item.fundamental && (
                       <div className="flex flex-col">
