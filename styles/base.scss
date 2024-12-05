@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @apply bg-body font-primary font-normal leading-relaxed text-text;
+  @apply bg-body font-primary font-normal leading-relaxed text-text scroll-smooth;
 }
 
 h1,
@@ -47,4 +47,8 @@ h6,
 
 code {
   @apply before:hidden after:hidden;
+}
+
+.custom-image {
+  height: revert-layer;
 }
