@@ -7,7 +7,7 @@ import "../styles/style.scss";
 import NextTopLoader from "nextjs-toploader";
 
 export const metadata = {
-  title: "Tekno Selaran Makmur",
+  title: "Tekno Selaras Makmur",
   description:
     "An integrated information & technology system provider, dedicated to delivering highly effective solutions in the field of Information Systems.",
 };
