@@ -1,6 +1,8 @@
+"use client";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 function Cta({ cta }) {
   return (
@@ -16,7 +18,13 @@ function Cta({ cta }) {
               height={206}
             />
           </div>
-          <div className="mt-5 text-center md:col-6 lg:col-5 md:mt-0 md:text-left">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="mt-5 text-center md:col-6 lg:col-5 md:mt-0 md:text-left"
+          >
             <h2>{cta?.title}</h2>
             <p className="mt-6">{markdownify(cta?.content)}</p>
             {cta.button.enable && (
@@ -28,7 +36,7 @@ function Cta({ cta }) {
                 {cta.button.label}
               </Link>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

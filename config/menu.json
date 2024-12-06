@@ -1,7 +1,7 @@
 {
   "main": [
     {
-      "name": "About us",
+      "name": "About Us",
       "url": "/"
     },
     {
@@ -9,7 +9,7 @@
       "url": "/product"
     },
     {
-      "name": "Contact us",
+      "name": "Contact",
       "url": "/contact"
     }
   ],

@@ -2,7 +2,7 @@
 banner:
   title: We Give You The Best Solutions
   content: IT professionals help with the development and maintenance of computer hardware and software systems. They also develop new technology solutions for businesses and governments. Being an IT expert is a rewarding career path that can make a difference in people's daily lives.
-  image: /images/banner-art.svg
+  image: /images/undraw_real_time_analytics.svg
   button:
     label: "Contact Us"
     link: "/contact"
@@ -90,9 +90,9 @@ workflow:
 
 # call_to_action
 call_to_action:
-  title: Ready to get started?
+  title: Ready To Get Started?
   content: Let’s begin working together to build the technology foundation your business needs to thrive.
-  image: "/images/cta.svg"
+  image: "/images/undraw_team_collaboration.svg"
   button:
     enable: true
     label: "Contact Us"
