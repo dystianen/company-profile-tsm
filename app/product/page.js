@@ -45,6 +45,7 @@ const competences = [
     framework: "ASP.Net, ASP.Net Core, MVC",
     database: "SQL Server, Oracle",
     tools: "Crystal Report, SAP Report, SSRS",
+    logo: "/logos/logo_net.png",
   },
   {
     title: "Java",
@@ -54,6 +55,7 @@ const competences = [
     framework: "Spring, Hibernate",
     database: "SQL Server, MySQL",
     tools: "Crystal Report, Jasper Report, Telerik",
+    logo: "/logos/logo_java.png",
   },
   {
     title: "FrontEnd Developer",
@@ -62,6 +64,7 @@ const competences = [
     fundamental: "HTML, CSS & JavaScript",
     framework: "React, Angular or Vue",
     tools: "Git, VS Code & Figma",
+    logo: "/logos/logo_frontend.png",
   },
   {
     title: "Business Intelligence",
@@ -70,6 +73,7 @@ const competences = [
     fundamental: "DAX (Tabular Model), MDX (Multidimensional Model), SQL",
     framework: "RDMS Database",
     tools: "SharePoint, Spotfire, Tableau, Power BI & Pivot, SSRS",
+    logo: "/logos/logo_business.png",
   },
   {
     title: "System Analyst/Business Analyst",
@@ -81,6 +85,7 @@ const competences = [
       "Monitoring the software engineering processes to ensure quality of application",
       "Utilize QA automation tools",
     ],
+    logo: "/logos/logo_ba.png",
   },
   {
     title: "Automation",
@@ -91,6 +96,7 @@ const competences = [
       "UAT Internal and External",
       "Setup License",
     ],
+    logo: "/logos/logo_automation.png",
   },
 ];
 
@@ -245,8 +251,8 @@ const Product = () => {
                   </div>
                   <p>{item.desc}</p>
                 </div>
-                <div className="w-full lg:w-1/2 p-6 bg-white  rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 ">
-                  <div className="flex flex-col gap-2">
+                <div className="w-full lg:w-1/2 p-6 bg-white  rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 grid grid-cols-5 gap-4">
+                  <div className="col-span-5 lg:col-span-3 flex flex-col gap-2">
                     {item.fundamental && (
                       <div className="flex flex-col">
                         <p>Programming Language</p>
@@ -283,6 +289,18 @@ const Product = () => {
                         </ul>
                       </div>
                     )}
+                  </div>
+
+                  <div className="col-span-5 lg:col-span-2 flex items-end justify-end">
+                    <div>
+                      <Image
+                        src={item.logo}
+                        width={150}
+                        height={150}
+                        alt={item.title}
+                        className="custom-image"
+                      />
+                    </div>
                   </div>
                 </div>
               </motion.div>
